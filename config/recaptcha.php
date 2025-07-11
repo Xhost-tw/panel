@@ -4,24 +4,24 @@ return [
     /*
      * Enable or disable captchas
      */
-    'enabled' => env('RECAPTCHA_ENABLED', true),
+    'enabled' => env('RECAPTCHA_ENABLED', false),
 
     /*
      * API endpoint for recaptcha checks. You should not edit this.
      */
-    'domain' => env('RECAPTCHA_DOMAIN', 'https://www.google.com/recaptcha/api/siteverify'),
+    'domain' => env('RECAPTCHA_DOMAIN', 'https://challenges.cloudflare.com/turnstile/v0/siteverify'),
 
     /*
      * Use a custom secret key, we use our public one by default
      */
-    'secret_key' => env('RECAPTCHA_SECRET_KEY', '6LcJcjwUAAAAALOcDJqAEYKTDhwELCkzUkNDQ0J5'),
-    '_shipped_secret_key' => '6LcJcjwUAAAAALOcDJqAEYKTDhwELCkzUkNDQ0J5',
+    'secret_key' => env('RECAPTCHA_SECRET_KEY', 'ChangeMe'),
+    '_shipped_secret_key' => 'ChangeMe',
 
     /*
      * Use a custom website key, we use our public one by default
      */
-    'website_key' => env('RECAPTCHA_WEBSITE_KEY', '6LcJcjwUAAAAAO_Xqjrtj9wWufUpYRnK6BW8lnfn'),
-    '_shipped_website_key' => '6LcJcjwUAAAAAO_Xqjrtj9wWufUpYRnK6BW8lnfn',
+    'website_key' => env('RECAPTCHA_WEBSITE_KEY', 'ChangeMe'),
+    '_shipped_website_key' => 'ChangeMe',
 
     /*
      * Domain verification is enabled by default and compares the domain used when solving the captcha
